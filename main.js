@@ -1,4 +1,4 @@
-let i = 1
+let i = 1;
 let changeColorLoop = function(){
   changeColor(i++);
 }
