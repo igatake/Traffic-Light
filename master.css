@@ -6,10 +6,10 @@
 #container {
   background-color: rgb(168, 168, 168);
   border-radius: 50px;
-  float: left;
   display: flex;
   padding: 15px 15px;
-  margin: 100px 100px;
+  margin: 100px 100px 50px;
+  width: 330px;
 }
 
 .lights {
@@ -28,4 +28,44 @@
 }
 #red {
   background-color: rgb(255, 26, 4);
+}
+
+.btn__container {
+  height: 250px;
+  width: 150px;
+  background-color: rgb(168, 168, 168);
+  margin-left: 300px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.display {
+  position: relative;
+  background-color: rgb(0, 180, 212);
+  height: 120px;
+  width: 130px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.display p {
+  padding-top: 45px;
+  font-size:11px;
+  font-weight: bold;
+}
+
+#btn {
+  display: inline-block;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  background-color: rgb(0, 93, 251);
+  border-radius: 40px;
+  margin: 12px 35px;
+  cursor: pointer;
+}
+
+/*このclassを付け外しすることで点灯を表現できる*/
+.chg__opc {
+  opacity: 1;
 }
