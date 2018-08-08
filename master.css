@@ -65,6 +65,7 @@
   cursor: pointer;
 }
 
+/*このclassを付け外しすることで点灯を表現できる*/
 .chg__opc {
   opacity: 1;
 }
