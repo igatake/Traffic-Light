@@ -3,8 +3,20 @@
   margin: 0;
 }
 
-#container {
+.gray {
   background-color: rgb(168, 168, 168);
+}
+.blue {
+  background-color: rgb(0, 230, 147);
+}
+.yellow {
+  background-color: rgb(237, 235, 8);
+}
+.red {
+  background-color: rgb(255, 26, 4);
+}
+
+#container {
   border-radius: 50px;
   display: flex;
   padding: 15px 15px;
@@ -20,20 +32,10 @@
   opacity: 0.2;
 }
 
-#blue {
-  background-color: rgb(0, 230, 147);
-}
-#yellow {
-  background-color: rgb(237, 235, 8);
-}
-#red {
-  background-color: rgb(255, 26, 4);
-}
 
 .btn__container {
   height: 250px;
   width: 150px;
-  background-color: rgb(168, 168, 168);
   margin-left: 300px;
   position: absolute;
   border-radius: 10px;
@@ -65,7 +67,30 @@
   cursor: pointer;
 }
 
+#ped__sign {
+  height: 250px;
+  width: 150px;
+  margin-left: 100px;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.images {
+  width: 130px;
+  height: 120px;
+  margin-top: -5px;
+}
+
+.ped__light {
+  margin: 10px;
+  height: 110px;
+  width: 130px;
+  opacity: 0.2;
+  border-radius: 10px;
+}
+
 /*このclassを付け外しすることで点灯を表現できる*/
+/*下に置かないと動作しないので注意*/
 .chg__opc {
   opacity: 1;
 }
