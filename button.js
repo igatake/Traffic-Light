@@ -12,7 +12,7 @@ $('#btn').on('click', function(){
   blueToYellow();
   chgTextWait();
 //setTimeoutで変化の順序を設定
-//赤=>青は8000-3000で５秒間で青に戻る設定
+//赤=>青は10000-3000で7秒間で青に戻る設定
   setTimeout(yellowToRed, 3000);
   setTimeout(pedRedToBlue, 4000);
   setTimeout(chgTextGo, 4000);
