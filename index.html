@@ -9,15 +9,27 @@ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
   </head>
   <body>
-    <div id="container">
-      <div id="blue" class="lights chg__opc">
+
+    <div id="container" class="gray">
+      <div id="blue__light" class="blue lights chg__opc">
       </div>
-      <div id="yellow" class="lights">
+      <div id="yellow__light" class="yellow lights">
       </div>
-      <div id="red" class="lights">
+      <div id="red__light" class="red lights">
       </div>
     </div>
-    <div class="btn__container">
+<!-- ped => pedestorian 歩行者 -->
+    <div id="ped__sign" class="gray">
+      <div id="ped_blue" class="ped__light blue">
+        <img class="images" src="images/go.png" alt="歩く人">
+      </div>
+      <div id="ped__red" class="ped__light red chg__opc">
+        <img class="images" src="images/stop.png" alt="止まる人">
+      </div>
+    </div>
+
+
+    <div class="btn__container gray">
       <div class="display">
         <p class="display__text">ボタンを押してください</p>
       </div>
