@@ -1,8 +1,9 @@
+
 //ボタンが連打されることによる挙動の崩れを防ぐための変数を規定
 let isBlue = true;
 
 $('#btn').on('click', function(){
-  if (isBlue === false) {
+  if (isBlue === false) 
 //もしこれがfalseだった場合,
 //すでに信号は変化しているので,
 //ボタンを押しても作用しないようにする
@@ -14,6 +15,7 @@ $('#btn').on('click', function(){
   setTimeout(YellowToRed, 3000);
   setTimeout(RedtoBlue, 8000);
 });
+
 
 //chg__opcの付け外しによりopactyを
 //1<=>0.2に変更することで点灯を表現。

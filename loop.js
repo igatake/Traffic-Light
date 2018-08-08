@@ -3,6 +3,7 @@ let i = 1;
 let changeColorLoop = function(){
   changeColor(i++);
 }
+
 //setIntervalでループ間の遷移速度を決定
 setInterval(changeColorLoop, 1000);
 
