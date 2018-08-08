@@ -10,13 +10,15 @@ $('#btn').on('click', function(){
   }
 
   blueToYellow();
+  chgTextWait();
 //setTimeoutで変化の順序を設定
 //赤=>青は8000-3000で５秒間で青に戻る設定
   setTimeout(yellowToRed, 3000);
   setTimeout(pedRedToBlue, 4000);
+  setTimeout(chgTextGo, 4000);
   flashing();
   setTimeout(redtoBlue, 10000);
-
+  setTimeout(chgTextReset, 10000);
 });
 
 //chg__opcの付け外しによりopactyを
@@ -59,4 +61,23 @@ function flashing(){
   setTimeout(pedBlueToRed, 8400);
   setTimeout(pedRedToBlue, 8700);
   setTimeout(pedBlueToRed, 9000);
+}
+
+//displayのtextを変更
+function chgTextWait(){
+  $('#display__text')
+  .text('少々お待ちください')
+  .css('fontSize', '13px');
+}
+
+function chgTextGo(){
+  $('#display__text')
+  .text('渡れます')
+  .css('fontSize', '16px');
+}
+
+function chgTextReset(){
+  $('#display__text')
+  .text('ボタンを押してください')
+  .css('fontSize', '11px');
 }
