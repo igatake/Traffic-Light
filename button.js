@@ -9,6 +9,7 @@ $('#btn').on('click', function(){
 //ボタンを押しても作用しないようにする
     return;
   }
+  
   //setTimeoutで変化の順序を設定
   colorChanger(0);
   setTimeout('colorChanger(1)', 3000);
@@ -19,6 +20,7 @@ $('#btn').on('click', function(){
 });
 
 //chg_opcの付け外しによりopactyを1<=>0.2に変更することで点灯を表現。
+
 //n=0で青=>黄, n=1で黄=>赤, n=2で赤=>青
 function colorChanger(n){
   let color1 = colors[n];
