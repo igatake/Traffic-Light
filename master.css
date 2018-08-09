@@ -33,7 +33,7 @@
 }
 
 
-.btn__container {
+.btn_container {
   height: 250px;
   width: 150px;
   margin-left: 300px;
@@ -68,7 +68,7 @@
   cursor: pointer;
 }
 
-#ped__sign {
+#ped_sign {
   height: 250px;
   width: 150px;
   margin-left: 100px;
@@ -82,7 +82,7 @@
   margin-top: -5px;
 }
 
-.ped__light {
+.ped_light {
   margin: 10px;
   height: 110px;
   width: 130px;
@@ -92,6 +92,6 @@
 
 /*このclassを付け外しすることで点灯を表現できる*/
 /*下に置かないと動作しないので注意*/
-.chg__opc {
+.chg_opc {
   opacity: 1;
 }

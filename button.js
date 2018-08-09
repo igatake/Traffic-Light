@@ -18,20 +18,20 @@ $('#btn').on('click', function(){
   setTimeout('colorChanger(2)', 10000);
 });
 
-//chg__opcの付け外しによりopactyを1<=>0.2に変更することで点灯を表現。
+//chg_opcの付け外しによりopactyを1<=>0.2に変更することで点灯を表現。
 //n=0で青=>黄, n=1で黄=>赤, n=2で赤=>青
 function colorChanger(n){
   let color1 = colors[n];
   let color2 = colors[n + 1];
-  $('#' + color1 + '__light').removeClass('chg__opc');
-  $('#' + color2 + '__light').addClass('chg__opc');
+  $('#' + color1 + '_light').removeClass('chg_opc');
+  $('#' + color2 + '_light').addClass('chg_opc');
   if (n == 0){
     isBlue = false;
-    $('#display__text')
+    $('#display_text')
     .text('少々お待ちください')
     .css('fontSize', '13px');
   } else if (n == 2){
-    $('#display__text')
+    $('#display_text')
     .text('ボタンを押してください')
     .css('fontSize', '11px');
     isBlue = true;
@@ -43,10 +43,10 @@ function colorChanger(n){
 function pedColorChanger(n){
   let pedColor1 = pedColors[n];
   let pedColor2 = pedColors[n + 1];
-  $('#ped__' + pedColor1).removeClass('chg__opc');
-  $('#ped__' + pedColor2).addClass('chg__opc');
+  $('#ped_' + pedColor1).removeClass('chg_opc');
+  $('#ped_' + pedColor2).addClass('chg_opc');
   if (n == 1) {
-    $('#display__text')
+    $('#display_text')
     .text('渡れます')
     .css('fontSize', '16px');
   }
