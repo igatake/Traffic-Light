@@ -9,6 +9,7 @@ $('#btn').on('click', function(){
 //ボタンを押しても作用しないようにする
     return;
   }
+  
   //setTimeoutで変化の順序を設定
   colorChanger(0);
   setTimeout('colorChanger(1)', 3000);
