@@ -21,37 +21,37 @@ $('#btn').on('click', function(){
   setTimeout(chgTextReset, 10000);
 });
 
-//chg__opcの付け外しによりopactyを
+//chg_opcの付け外しによりopactyを
 //1<=>0.2に変更することで点灯を表現。
 function blueToYellow(){
-  $('#blue__light').removeClass('chg__opc');
-  $('#yellow__light').addClass('chg__opc');
+  $('#blue_light').removeClass('chg_opc');
+  $('#yellow_light').addClass('chg_opc');
   isBlue = false;
   console.log('Turn in yellow');
 }
 
 function yellowToRed(){
-  $('#yellow__light').removeClass('chg__opc');
-  $('#red__light').addClass('chg__opc');
+  $('#yellow_light').removeClass('chg_opc');
+  $('#red_light').addClass('chg_opc');
   console.log('Turn in red');
 }
 
 function redtoBlue(){
-  $('#red__light').removeClass('chg__opc');
-  $('#blue__light').addClass('chg__opc');
+  $('#red_light').removeClass('chg_opc');
+  $('#blue_light').addClass('chg_opc');
   isBlue = true;
   console.log('Turn in blue');
 }
 
 //歩行者信号の色の遷移
 function pedRedToBlue(){
-  $('#ped__red').removeClass('chg__opc');
-  $('#ped_blue').addClass('chg__opc');
+  $('#ped_red').removeClass('chg_opc');
+  $('#ped_blue').addClass('chg_opc');
 }
 
 function pedBlueToRed(){
-  $('#ped_blue').removeClass('chg__opc');
-  $('#ped__red').addClass('chg__opc');
+  $('#ped_blue').removeClass('chg_opc');
+  $('#ped_red').addClass('chg_opc');
 }
 
 //歩行者信号の点滅
@@ -65,19 +65,19 @@ function flashing(){
 
 //displayのtextを変更
 function chgTextWait(){
-  $('#display__text')
+  $('#display_text')
   .text('少々お待ちください')
   .css('fontSize', '13px');
 }
 
 function chgTextGo(){
-  $('#display__text')
+  $('#display_text')
   .text('渡れます')
   .css('fontSize', '16px');
 }
 
 function chgTextReset(){
-  $('#display__text')
+  $('#display_text')
   .text('ボタンを押してください')
   .css('fontSize', '11px');
 }
